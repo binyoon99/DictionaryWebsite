@@ -26,12 +26,15 @@ export default function Word ({ word: w }){
       }
     });
     }
+
+
     function del() {
         if (window.confirm("Do you wish to delete?")) {
           fetch(`http://localhost:3001/words/${word.id}`, {
             method: "DELETE",
           }).then(res => {
             if (res.ok) {
+                    
               setWord({
                 ...word,
                 id: 0,
