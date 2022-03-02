@@ -31,11 +31,12 @@ a {
 }
 
 .header {
+  padding: 10px;
   position: relative;
 }
 
 .header .menu {
-  position: absolute;
+  /*position: absolute;*/
   top: 10px;
   right: 0;
 }
@@ -96,7 +97,9 @@ table td:first-child {
   color: #fff;
   background-color: firebrick;
 }
-
+.setVisibility {
+  visibility: "hidden";
+}
 button {
   padding: 10px;
   font-weight: bold;
