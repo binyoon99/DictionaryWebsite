@@ -1,7 +1,8 @@
 ## Welcome to my React Learning Website
-- This was my playground to learn React and json
+- This was my playground to learn React and json.
 - And attempt to teach my friends some Korean words!
-- I did not wirte any comments on my codes, but if I have request and time I will add comments for easier understanding.
+- I did not wirte any comments on my codes, but if I have enough request and time I will add comments for easier understanding.
+- Every right goes to github.com/binyoon99 
 
 ## Available Scripts
 
