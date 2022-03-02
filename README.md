@@ -1,4 +1,4 @@
-## Welcome to my React Learning Website
+## Welcome to my Korean - English Vocabulary Website
 - This was my playground to learn React and json.
 - And attempt to teach my friends some Korean words!
 - I did not wirte any comments on my codes, but if I have enough request and time I will add comments for easier understanding.
