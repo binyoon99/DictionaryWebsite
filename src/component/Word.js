@@ -4,6 +4,7 @@ export default function Word ({ word: w }){
     const [word,setWord]= useState(w);
     const [isShow, setIsShow] = useState(false);
     const [isDone, setIsDone] = useState(word.isDone);
+    const [isMemorized, setIsMemorized] = useState(word.isMemorized);
 
     function toggleShow(){
         setIsShow(!isShow);
@@ -28,10 +29,13 @@ export default function Word ({ word: w }){
     }
 
 
+
     function del() {
+        storeWord(word); 
         if (window.confirm("Do you wish to delete?")) {
           fetch(`http://localhost:3001/words/${word.id}`, {
             method: "DELETE",
+            
           }).then(res => {
             if (res.ok) {
                     
@@ -45,11 +49,36 @@ export default function Word ({ word: w }){
       }
       if (word.id === 0){
         return null;
+        
+        
     }
+    function storeWord(){
+        fetch(`http://localhost:3002/words`, {
+
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    day : word.day,
+                    eng : word.eng,
+                    kor : word.kor,
+                    id : word.id,
+                    isDone: false,
+                    isMemorized : false
+                    
+                })
+        }).then(res => {
+            if (res.ok) {
+              //history.push(`/day/${dayRef.current.value}`)
+            }
+          });
+
+        }
     
     return(
          <tr className={isDone? 'off':""}>
-                <td>
+                <td >
                     <input type="checkbox" checked = {isDone} onChange = {toggleDone}></input>
                     </td>
                 <td>{word.kor}</td>

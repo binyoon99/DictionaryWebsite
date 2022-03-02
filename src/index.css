@@ -31,6 +31,7 @@ a {
 }
 
 .header {
+  padding: 10px;
   position: relative;
 }
 
@@ -96,7 +97,9 @@ table td:first-child {
   color: #fff;
   background-color: firebrick;
 }
-
+.setVisibility {
+  visibility: "hidden";
+}
 button {
   padding: 10px;
   font-weight: bold;

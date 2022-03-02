@@ -7,30 +7,38 @@ import useFetch from "../hook/useFetch";
 export default function CreateWord(){
     const days = useFetch("http://localhost:3001/days");
     const history = useHistory ();
-    
+    //For Slow Internet 
+    const [isLoading, setIsLoading] = useState(false);
     function onSubmit(e){
         e.preventDefault();
         /*
         console.log(krRef.current.value);
         console.log(engRef.current.value);
         console.log(dayRef.current.value);*/
-        fetch(`http://localhost:3001/words/`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        day : dayRef.current.value,
-        eng : engRef.current.value,
-        kor : krRef.current.value,
-        isDone: false
-      }),
-    }).then(res => {
-      if (res.ok) {
-        alert("The word has been created");
-        history.push(`/day/${dayRef.current.value}`)
-      }
-    });
+        if(!isLoading){
+            setIsLoading(true);
+            fetch(`http://localhost:3001/words/`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    day: dayRef.current.value,
+                    eng: engRef.current.value,
+                    kor: krRef.current.value,
+                    isDone: false,
+                    isMemorized: false
+                }),
+            }).then(res => {
+                if (res.ok) {
+                    alert("The word has been created");
+                    history.push(`/day/${dayRef.current.value}`)
+                    setIsLoading(false);
+                }
+            });
+        }
+            
+        
     }
     const krRef = useRef(null);
     const engRef = useRef(null);
@@ -55,7 +63,7 @@ export default function CreateWord(){
                     ))}
                 </select>
             </div>
-            <button>Save</button>
+            <button>{isLoading? "Saving...": "Save"}</button>
         </form>
     );
 

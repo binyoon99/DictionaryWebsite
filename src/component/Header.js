@@ -7,7 +7,7 @@ export default function Header(){
         <div></div>
         <div className="menu">
             <Link to ="/create_word" className="link">Add Words</Link>
-            <a href="#x" className="link">Add Days</a>
+            <Link to ="/create_day" className="link">Add Days</Link>
             <Link to ="/check_done" className="link">Finished Words</Link>
         </div>
     </div>

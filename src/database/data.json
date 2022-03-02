@@ -15,24 +15,24 @@
     {
       "day": 4,
       "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
     }
   ],
   "words": [
-    {
-      "id": 1,
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": true,
-      "isMemorized" : false
-    },
     {
       "id": 2,
       "day": 2,
       "eng": "car",
       "kor": "자동차",
       "isDone": false,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "id": 3,
@@ -40,8 +40,7 @@
       "eng": "school",
       "kor": "학교",
       "isDone": false,
-      "isMemorized" : false,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "id": 4,
@@ -49,7 +48,7 @@
       "eng": "pencil",
       "kor": "연필",
       "isDone": false,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "day": 5,
@@ -57,7 +56,7 @@
       "kor": "창문",
       "isDone": false,
       "id": 5,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "day": 3,
@@ -65,7 +64,7 @@
       "kor": "집",
       "isDone": false,
       "id": 6,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "day": 2,
@@ -73,7 +72,7 @@
       "kor": "쥐",
       "isDone": false,
       "id": 7,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "day": 4,
@@ -81,7 +80,7 @@
       "kor": "원숭이",
       "isDone": false,
       "id": 8,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "day": 4,
@@ -89,15 +88,7 @@
       "kor": "사과",
       "isDone": false,
       "id": 9,
-      "isMemorized" : false
-    },
-    {
-      "day": 1,
-      "eng": "computer",
-      "kor": "컴퓨터",
-      "isDone": true,
-      "id": 10,
-      "isMemorized" : false
+      "isMemorized": false
     },
     {
       "day": "3",
@@ -105,15 +96,47 @@
       "kor": "창문",
       "isDone": false,
       "id": 11,
-      "isMemorized" : false
+      "isMemorized": false
+    },
+    {
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "id": 1,
+      "isDone": false,
+      "isMemorized": false
+    },
+    {
+      "day": 1,
+      "eng": "computer",
+      "kor": "컴퓨터",
+      "id": 10,
+      "isDone": false,
+      "isMemorized": false
     },
     {
       "day": "1",
       "eng": "house",
       "kor": "집",
-      "isDone": false,
       "id": 12,
-      "isMemorized" : false
+      "isDone": false,
+      "isMemorized": false
+    },
+    {
+      "day": "2",
+      "eng": "computer",
+      "kor": "컴퓨터",
+      "id": 13,
+      "isDone": false,
+      "isMemorized": false
+    },
+    {
+      "day": "6",
+      "eng": "Monkey",
+      "kor": "원숭이",
+      "isDone": false,
+      "isMemorized": false,
+      "id": 14
     }
   ]
 }

@@ -2,7 +2,7 @@ import { useState} from "react";
 import useFetch from "../hook/useFetch"; 
 import DoneWords from "./DoneWords";
 export default function CheckDone( ){
-    const words = useFetch(`http://localhost:3001/words?isDone=true`);
+    const words = useFetch(`http://localhost:3002/words`);
     
 
     console.log(words.isDone);

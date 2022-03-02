@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 import EmptyPage from "./component/EmptyPage";
 import CreateWord from "./component/CreateWord";
 import CheckDone from "./component/CheckDone";  
+import CreateDay from "./component/CreateDay";
 // Used react-router-dom@5.2.0 but V6 came out
 // Future me please learn from www.youtube.com/watch?v=CHHXeHVK-8U and change my code
 
@@ -29,6 +30,10 @@ function App() {
 
           <Route path = "/check_done"> 
             <CheckDone></CheckDone>
+          </Route>
+
+          <Route path = "/create_day"> 
+            <CreateDay></CreateDay>
           </Route>
 
           <Route>
