@@ -5,7 +5,7 @@ export default function CheckDone( ){
     const words = useFetch(`http://localhost:3002/words`);
     
 
-    console.log(words.isDone);
+    //console.log(words.isDone);
     return(
         <>
         <h2>Memorized Words</h2>
