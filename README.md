@@ -1,8 +1,9 @@
 ## Welcome to my Korean - English Vocabulary Website
-- This was my playground to learn React and json.
+- This was my playground to explore React and json.
 - And attempt to teach my friends some Korean words!
 - I did not wirte any comments on my codes, but if I have enough request and time I will add comments for easier understanding.
 - Every right goes to github.com/binyoon99 
+
 
 ## Available Scripts
 
