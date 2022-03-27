@@ -134,9 +134,9 @@
       "day": "6",
       "eng": "Monkey",
       "kor": "원숭이",
+      "id": 14,
       "isDone": false,
-      "isMemorized": false,
-      "id": 14
+      "isMemorized": false
     }
   ]
 }

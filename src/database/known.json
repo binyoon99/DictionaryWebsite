@@ -17,5 +17,14 @@
       "id": 4
     }
   ],
-  "words": []
+  "words": [
+    {
+      "day": "3",
+      "eng": "Moha",
+      "kor": "d",
+      "id": 15,
+      "isDone": false,
+      "isMemorized": false
+    }
+  ]
 }
